@@ -1,0 +1,105 @@
+@import '@/assets/css/common.scss';
+
+	
+.body{
+	background-color: white;
+	height: 100vh;
+	@include flex-center;
+	flex-direction: column;
+		
+	
+	.models	 {
+		@include flex-center;
+		justify-content: space-between;
+		height:  100%;
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	
+		
+		.scroll{
+			width: 32%;
+			height: 100%;
+			font-size: $font-size-sm;
+			color:$text-color;
+			
+			box-sizing: border-box;
+			
+			.item{
+				cursor: pointer;
+				font-size: $font-size-sm;
+			}
+			
+		}
+		
+		.var{
+
+			position: relative;
+			z-index: 9;
+			background-color:white;
+			padding: 20rpx 0;
+			
+			.item{
+				text-align: center;
+				padding: 15rpx 0;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				width: 75%;
+				margin: 12rpx auto;
+			}
+			
+			.active{
+				font-weight: bold;
+				color: white;
+				background-color: $primary-color;
+				border-radius: 6rpx;
+				box-shadow: $sidebar-shadow;
+			}
+		}
+		
+		
+		.content{
+			width: 70%;
+			padding: 24rpx 24rpx 24rpx 0;
+			background-color: white;
+			
+			
+			.footer{
+		
+				@include flex-center;
+				padding: 18rpx 28rpx 50vh 12rpx;
+				width: 100%;
+				
+				font-size:$font-size-smm;
+				color:$sm-color;
+			
+			}
+			
+		
+			.contain{
+				
+				@include flex-center;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			
+			
+			.box{
+				display: inline-flex;
+				background-color: white;
+				box-sizing: border-box;
+				max-width: 50%;
+				padding: 10rpx 6rpx;
+				
+				.item-image{
+					max-height: 20vw;
+					border-radius: 5rpx;
+					box-shadow: $box-shadow;
+				}
+			}	
+		}
+	}
+}

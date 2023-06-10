@@ -1,0 +1,147 @@
+@import '@/assets/css/common.scss';
+
+.body{
+	background-color: $bg-color;
+	height: 100vh;
+	padding:0 10rpx;
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content:center;
+	align-content: center;
+	flex-wrap: wrap;
+
+
+	.fixed{
+		position: fixed;
+		bottom: 6vh;
+		right:30rpx;
+		
+		@include flex-center;
+		flex-direction: column;
+		
+		z-index: 15;
+		
+		
+		.button{
+			@include flex-center;
+			border-radius: 50%;
+			width: 80rpx;
+			height:80rpx;
+			margin-top: 30rpx;;
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			background-color: rgba($primary-color,0.8);
+			
+
+			.image{
+				width: 32rpx;
+				height:32rpx;
+			}
+		}
+	}
+	
+	.top{
+		
+		@include flex-center;
+		width: 100%;
+		box-sizing: border-box;
+		padding:0;
+
+		.image{
+			width: 100%;
+			box-sizing: border-box;
+		}
+	}
+	
+	
+	.edit {
+	
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	
+		width: 100vw;
+		height: fit-content;
+		background-color: white;
+	
+	
+		border-top-left-radius: 60rpx;
+		border-top-right-radius: 60rpx;
+	
+		position: relative;
+		min-height: 200px;
+		
+	
+	
+		.title {
+	
+			@include flex-center;
+			justify-content: space-between;
+	
+			width: 100%;
+			box-sizing: border-box;
+			padding: 5rpx 12rpx 0;
+	
+			.iconfont {
+				font-size: 36rpx;
+				padding: 30rpx 30rpx 18rpx;
+				color: $sub-text-color;
+				cursor: pointer;
+			}
+	
+			.text {
+				font-size: $font-size-sm;
+			}
+	
+		}
+		
+		
+		
+		.content{
+			box-sizing: border-box;
+			padding: 5rpx 25rpx;
+			
+			.bottom{
+				@include flex-center;
+				flex-direction: column;
+				width: 100%;
+				box-sizing: border-box;
+				
+				:deep(.uni-easyinput) {
+					box-sizing: border-box;
+					width: 100%;
+					font-size: $font-size-xl;
+					color: $text-color;
+					margin-top: 30rpx;
+					height: 75rpx;
+					padding: 0 30rpx;
+				
+					&:focus {
+						border-color: $primary-color;
+					}
+				}
+				
+				:deep(.placeholder) {
+					color: $sm-color;
+				}
+			}
+		}
+		
+		
+		.footer{
+			
+			width: 100%;
+			box-sizing: border-box;
+			font-size: $font-size-smm;
+			text-align: center;
+			margin: 38rpx 0;
+			color:#d43636;
+			
+		}
+		
+	}
+
+	
+	
+}

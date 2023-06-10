@@ -1,0 +1,96 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"disableScroll": false,
+		"style": {
+			"navigationBarTitleText": "定制",
+			"disableScroll": true,
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/show/show",
+		"disableScroll": false,
+		"style": {
+			"navigationBarTitleText": "作品预览"
+		}
+	}, {
+		"path": "pages/list/list",
+		"style": {
+			"navigationBarTitleText": "图库",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"backgroundColor": "#ffffff",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/user/user",
+		"style": {
+			"navigationBarTitleText": "作品",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/models/models",
+		"style": {
+			"navigationBarTitleText": "模型",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/custom-goods/custom-goods",
+		"style": {
+			"navigationBarTitleText": "订单确认",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/creative/creative",
+		"style": {
+			"navigationBarTitleText": "创意图片",
+			"navigationBarBackgroundColor": "#FFFFFF",
+			"backgroundColor": "#ffffff",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/make/make",
+		"style": {
+			"navigationBarTitleText": "创意图片",
+			"enablePullDownRefresh": false
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "定制",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"borderStyle": "black",
+		"iconWidth": "15px",
+		"selectedColor": "#37cb7e",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/list/list",
+			"iconPath": "/static/tabbar/no.png",
+			"selectedIconPath": "/static/tabbar/yes.png",
+			"text": "图库"
+		}, {
+			"pagePath": "pages/index/index",
+			"iconPath": "/static/tabbar/no.png",
+			"selectedIconPath": "/static/tabbar/yes.png",
+			"text": "定制"
+		}, {
+			"pagePath": "pages/creative/creative",
+			"iconPath": "/static/tabbar/no.png",
+			"selectedIconPath": "/static/tabbar/yes.png",
+			"text": "创意"
+		}, {
+			"pagePath": "pages/user/user",
+			"iconPath": "/static/tabbar/no.png",
+			"selectedIconPath": "/static/tabbar/yes.png",
+			"text": "作品"
+		}]
+	}
+}

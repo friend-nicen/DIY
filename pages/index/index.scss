@@ -1,0 +1,68 @@
+@import '@/assets/css/common.scss';
+
+	.container {
+
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+
+		height: 100vh;
+		width: 100vw;
+
+		.canvas {
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.canvas2 {
+			position: fixed;
+			top: 0;
+			left: -100vw;
+			@include flex-center;
+			width: 100vw;
+			height: 82vh;
+			z-index: 1;
+			visibility: hidden;
+		}
+
+		.select {
+			position: fixed;
+			top: 0;
+			left: 0;
+
+			@include flex-center;
+
+			width: 100vw;
+			height: 82vh;
+			
+			
+			z-index: 10;
+
+
+			.asset {
+				@include flex-center;
+				flex-direction: column;
+				padding-bottom: 0.5vh;
+
+				.text {
+					font-size: 24rpx;
+					padding: 12rpx 30rpx;
+					color: #303030;
+				}
+			}
+
+			.image {
+				width: 82rpx;
+				height: 82rpx;
+				box-shadow: $box-shadow;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+		}
+
+
+	}

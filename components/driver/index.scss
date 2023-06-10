@@ -1,0 +1,85 @@
+@import '@/assets/css/common.scss';
+
+
+.modal {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+
+	z-index: 15;
+
+	background-color: rgba(#000, 0.25);
+		
+
+	.angle{
+		position: fixed;
+		width: 0;
+		height: 0;
+		content: " ";
+		border: 5px solid transparent;
+		z-index: 100;
+		opacity: 0;
+	}
+	
+	.right{
+		border-right-color: white;
+	}
+	.top{
+		border-top-color: white;
+	}
+	.bottom{
+		border-bottom-color: white;
+	}
+	.left{
+		border-left-color: white;
+	}
+
+
+	.step{
+		position: fixed;
+				opacity: 0;
+		min-width: 65vw;
+		max-width: 65vw;
+		
+		box-sizing: border-box;
+		padding: 26rpx 28rpx 16rpx;
+		
+		background-color: white;
+		box-shadow: $sidebar-shadow;
+		border-radius: 24rpx;
+		z-index: 100;
+		
+		word-wrap:break-word;
+		word-spacing:normal;
+		word-break: break-all;
+		
+		.content{
+			font-size: $font-size-xl;
+			color:$text-color;
+		}
+		
+
+		
+		
+		.button{
+			display: flex;
+			justify-content: space-between;
+			
+			width: 100%;
+			box-sizing: border-box;
+			padding: 20rpx 10rpx 0;
+			
+			.cancel,.next{
+				font-size: $font-size-mxl;
+				color:$primary-color;
+				
+				&:active{
+					color:$active-color;
+				}
+			}
+		}
+	}
+
+}

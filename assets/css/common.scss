@@ -1,0 +1,40 @@
+@import './iconfont.css';
+$primary-color: rgba(#07c160,0.8);
+$active-color:#07c160;
+
+$sub_clor:#3491FA;
+$bg-color:#f5f5f5;
+$bg-color-2:#f5f6f8;
+$bg-color-3: #ecfbf4;
+
+$font-size-sm:30rpx;
+$font-size-xl:28rpx;
+$font-size-mxl:26rpx;
+$font-size-smm:24rpx;
+$font-size-smmm:22rpx;
+
+$sidebar-shadow:1px 1px 8px #{rgba(#1D2329,0.15)};
+$box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0 0 3px rgba(0, 0, 0, 0.05);
+
+$text-one:#000000;
+$text-color:#262626;
+$text-color-sub:#889191;
+$sub-text-color:rgba(0, 0, 0, 0.65);
+$sm-color:rgba(0, 0, 0, 0.5);
+
+$border-color:#e1e1e1;
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+@mixin wrap{
+	word-wrap:break-word;
+	word-spacing:normal;
+	word-break: break-all;
+}

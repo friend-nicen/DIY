@@ -1,0 +1,85 @@
+	@import '@/assets/css/common.scss';
+	
+	
+		/* 
+			操作
+		 */
+		.operate {
+			
+			position: fixed;
+			top:0;
+			left: 0;
+			z-index: 13;
+			width: 100%;
+			box-sizing: border-box;
+			
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			
+		
+			
+			background-color: transparent;
+
+
+			margin: 20rpx 0 30rpx;
+			padding: 0 24rpx 0 20rpx;
+
+
+			.left{
+				
+				@include flex-center;
+				
+				.info{
+					font-size: $font-size-smm;
+					color:$text-color-sub;
+				}
+				
+				.brand{
+					font-size: 28rpx;
+					color:#313233;
+				}
+				
+				.replace{
+					font-size: $font-size-xl;
+					color: rgba($primary-color, 0.8);
+					margin-left: 12rpx;
+					cursor: pointer;
+
+					&:active {
+						color: $primary-color;
+					}
+				}
+				
+			}
+
+
+			.right{
+				
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				
+
+				.reset {
+					margin-right: 20rpx;
+				}
+
+				.mini-btn {
+					font-size: 22rpx;
+					padding: 12rpx 30rpx;
+					color: white;
+					cursor: pointer;
+					background-color: rgba($primary-color, 0.8);
+
+					border-radius: 5px;
+					box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+					&:active {
+						background-color: $primary-color;
+					}
+
+				}
+				
+			}
+		}

@@ -1,0 +1,84 @@
+@import '@/assets/css/common.scss';
+
+.body{
+	background-color: white;
+	padding:0 30rpx;
+	box-sizing: border-box;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	.column{
+		
+		width: 31%;
+		margin: 0 1%;
+		box-sizing: border-box;
+		
+		.item{
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			width: 100%;
+			margin: 15rpx 0;
+			border-radius: 24rpx;
+			overflow: hidden;
+	
+			
+			.item-image{
+				width: 100%;
+				box-sizing: border-box;
+				border-radius: 24rpx;
+				border: 2rpx solid $border-color;
+				
+				transition-property: transform;
+				transition-duration: 0.3s;
+				
+				&:active{
+					transform: scale(0.95);
+				}
+			}
+			
+			.item-text{
+				@include flex-center;
+				flex-direction: column;
+				align-items: flex-start;
+				margin: 10rpx 0 24rpx;
+				
+				.left{
+					width: 100%;
+					font-size: $font-size-mxl;
+					color:$text-one;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+				
+				.right{
+					@include flex-center;
+					line-height: $font-size-mxl;;
+					.count{
+						font-size: $font-size-smmm;
+						color:$sub-text-color;
+					}
+					.iconfont{
+						font-size:18rpx;
+						color:$sub-text-color;
+					}
+				}
+			}
+			
+		}	
+	}
+			
+	.footer{
+
+		@include flex-center;
+		padding: 48rpx 28rpx;
+		width: 100%;
+		
+		font-size:$font-size-smm;
+		color:$sm-color;
+	
+	}
+}

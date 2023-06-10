@@ -1,0 +1,91 @@
+@import '@/assets/css/common.scss';
+
+
+	.footer {
+		position: relative;	
+		width: 96%;
+		margin: 0  0 18rpx 2%;
+		box-sizing: border-box;
+		height: 18vh;
+		background-color: white;
+		border-radius: 10px;
+		padding: 0 24rpx;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		
+		z-index: 11;
+		
+		
+		.tip{
+			
+			@include flex-center;
+			position: absolute;
+			top:-5vh;
+			left: 0;
+			width: 100%;
+			box-sizing: border-box;
+			z-index: 11;
+			
+			font-size: $font-size-smm;
+			color:$text-color-sub;
+		}
+		
+		
+		
+		.var{
+			height: 4.5vh;
+			padding: 0;
+			margin-bottom: 10rpx;
+			box-sizing: border-box;
+			flex-shrink: 1;
+			white-space: nowrap;
+			
+			
+			.item{
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				box-sizing: border-box;
+				
+				height:inherit;
+				font-size: $font-size-smm;
+				color: $sm-color;
+				
+				margin: 0;
+				padding: 10rpx 25rpx;
+			}
+			
+			.active{
+				background-color: $bg-color-3;
+				color:$primary-color;
+			}
+		}
+		
+		
+		.content{
+			
+			display: block;
+			height: 12.5vh;
+			box-sizing: border-box;
+			padding-bottom: 8rpx;
+			overflow-y: hidden;
+			height: 100%;
+			
+	
+			white-space: nowrap;
+				
+			.item-image{
+				display: inline-flex;
+				max-height: 12vh;;
+				height:  100%;
+				border-radius: 8rpx;
+				margin-right: 8rpx;
+			}
+		}
+
+
+
+	}

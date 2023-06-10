@@ -1,0 +1,166 @@
+	@import '@/assets/css/common.scss';
+	
+	.display {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+
+		box-sizing: border-box;
+		height: 100vh;
+		width: 100vw;
+		
+		.info-top{
+			
+			height: 55%;
+			margin: 0;
+			padding: 0;
+			
+			.swiper {
+				height:100%;
+				margin-top: 0;
+			
+				.top {
+			
+					@include flex-center;
+					overflow: hidden;
+			
+					height: 100%;
+					width: 100%;
+					margin-top: -2vh;
+			
+			
+					.image {
+						max-width: 100%;
+						width: 42%;
+					}
+				}
+			}
+			
+			
+			
+			.list{
+				
+				@include flex-center;
+				flex-direction: column;
+				margin-top: 10rpx;
+				padding: 0 36rpx;
+				
+				.li{
+					
+					@include flex-center;
+					justify-content: space-between;
+					
+					border-top: 1px solid $border-color;
+					
+					width: 100%;
+					padding: 30rpx 0;
+					
+					.left{
+						color:$sub-text-color;
+						font-size: $font-size-sm;
+					}
+					
+					
+					.right{
+						color:$text-color;
+						font-size: $font-size-sm;
+					}
+					
+					&:last-of-type{
+						border-bottom: 1px solid $border-color;
+					}
+					
+				}
+				
+				
+			
+				
+			}
+			
+		}
+
+
+
+		.bottom {
+			padding: 30rpx 30rpx 35rpx 30rpx;
+
+			@include flex-center;
+			justify-content: space-between;
+
+			border-top: 1px solid $border-color;
+
+			.inline {
+				display: flex;
+				@include flex-center;
+			}
+
+			.click {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				margin: 0 24rpx;
+
+				cursor: pointer;
+				line-height: normal;
+
+				padding: 0;
+				border: none;
+
+				background-color: transparent;
+				
+				&::after{
+					border: none;
+				}
+
+				.iconfont {
+					font-size: 40rpx;
+					margin: 8rpx 0;
+				}
+
+
+				.info{
+	
+					font-size: $font-size-smm;
+					color: $text-color;
+					border: none;
+					
+					&:active{
+						background-color: transparent;
+					}
+					
+				}
+				
+
+			}
+
+
+			.button {
+				font-size: 28rpx;
+				color: white;
+				padding: 24rpx 40rpx;
+				@include flex-center;
+				cursor: pointer;
+				
+				background-color: rgba($primary-color, 0.7);
+				
+				&:active {
+					background-color: $primary-color;
+				}
+			}
+
+			.left {
+				border-top-left-radius: 25px;
+				border-bottom-left-radius: 25px;
+			}
+
+			.right {
+				border-top-right-radius: 25px;
+				border-bottom-right-radius: 25px;
+			}
+		}
+
+	}

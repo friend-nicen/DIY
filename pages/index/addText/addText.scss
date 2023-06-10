@@ -1,0 +1,167 @@
+@import '@/assets/css/common.scss';
+
+	.addText {
+
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+
+		width: 100vw;
+		height: 540rpx;
+		background-color: white;
+
+
+		border-top-left-radius: 60rpx;
+		border-top-right-radius: 60rpx;
+
+		position: relative;
+
+
+		.title {
+
+			@include flex-center;
+			justify-content: space-between;
+
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 12rpx;
+
+			.iconfont {
+				font-size: 36rpx;
+				padding: 30rpx 30rpx 18rpx;
+				color: $sub-text-color;
+				cursor: pointer;
+			}
+
+			.text {
+				font-size: $font-size-sm;
+			}
+
+		}
+
+		.color-list,
+		.font-list {
+
+			white-space: nowrap;
+			padding: 20rpx;
+			margin-top: 10rpx;
+			width: 100%;
+			box-sizing: border-box;
+			height: 135rpx;
+
+			.item {
+
+				white-space: nowrap;
+				margin-top: 10rpx;
+
+				.color {
+
+					display: inline-flex;
+
+					width: 70rpx;
+					height: 70rpx;
+					margin-left: 20rpx;
+					border-radius: 50%;
+					box-shadow: $sidebar-shadow;
+					border: 2px solid transparent;
+				}
+
+
+				.active {
+					border-color: $primary-color;
+				}
+			}
+
+		}
+
+
+		.font-list {
+			padding-top: 0;
+			padding-bottom: 0;
+			height: 90rpx;
+			margin-top: 0;
+
+			/* 字体样式 */
+			.font-item {
+				display: inline-flex;
+				margin-right: 16rpx;
+				padding-bottom: 6rpx;
+
+				.image {
+					height: 50rpx;
+					max-width: 100px;
+				}
+
+				border-bottom: 2px solid transparent;
+			}
+
+
+			.active {
+				border-bottom-color: $primary-color;
+			}
+		}
+
+
+
+		.form {
+			@include flex-center;
+			position: relative;
+			padding: 10rpx 42rpx 30rpx;
+			height: 100%;
+			overflow: hidden;
+			box-sizing: border-box;
+
+
+			.direction {
+				position: absolute;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				right: 60rpx;
+				bottom: 50rpx;
+				font-size: $font-size-smmm;
+				padding: 8rpx 10rpx;
+				z-index: 99;
+
+				border-radius: 10rpx;
+				background-color: #eff2f5;
+				box-shadow: $box-shadow-2;
+
+				.item {
+					color: $text-color-sub;
+					cursor: pointer;
+					padding: 2rpx 10rpx;
+
+				}
+
+				.active {
+					background-color: $primary-color;
+					color: white;
+					border-radius: 12rpx;
+				}
+			}
+
+
+
+			.input {
+				box-sizing: border-box;
+				width: 100%;
+				height: inherit;
+				font-size: $font-size-xl;
+				border: 1px solid $border-color;
+				border-radius: 18rpx;
+				padding: 20rpx 25rpx;
+				color: $text-color;
+
+
+				&:focus {
+					border-color: $primary-color;
+				}
+			}
+
+			:deep(.placeholder) {
+				color: $sm-color;
+			}
+		}
+
+	}

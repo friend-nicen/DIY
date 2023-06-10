@@ -1,0 +1,112 @@
+@import '@/assets/css/common.scss';
+
+.one{
+	margin-top: 20rpx;
+	
+	.empty{
+		@include flex-center;
+		flex-direction: column;
+		box-sizing: border-box;
+		width: 100vw;
+		height: 80vh;
+		padding: 0;
+		margin: 0;
+		
+		.image{
+			max-width: 25vw;
+		}
+		
+		.info{
+			color: #8a8d93;
+			font-size: $font-size-smm;
+		}
+	}
+		
+}
+
+/* 单个面板 */
+.task {
+	background-color: #ffffff;
+	margin: 18rpx 2.5% 12rpx 2.5%;
+	padding: 20rpx 30rpx 20rpx 30rpx;
+	width: 95%;
+	box-sizing: border-box;
+
+	align-items: center;
+
+	border-radius: 5px;
+	font-size: 13.5px;
+	display: flex;
+	flex-wrap: wrap;
+
+	font-weight: 350;
+	color: #000000;
+	
+	
+	
+	
+	
+	/* 表单项 */
+	.line {
+		width: 100%;
+		display: flex;
+		margin: 10rpx 5rpx 16rpx 5rpx;
+		justify-content: space-between;
+		align-items: center;
+
+
+		/* 输入框之前的标签，强制不换行 */
+		.label {
+			display: inline-flex;
+			color: #606266;
+			font-size: 34rpx;
+			text-align: left;
+			font-size: 14px;
+			margin: 10rpx 15rpx 10rpx 5rpx;
+			word-wrap: break-word;
+			word-spacing: normal;
+		}
+		
+		
+		.tab{
+			display: inline-flex;
+			padding: 3rpx 10rpx;
+			font-size: $font-size-smm;
+			background-color: $primary-color;
+			color: white;
+			
+			border-radius: 15rpx;
+		}
+}
+}
+
+
+
+.popup-text {
+	color: #303133;
+	width: 100%;
+	margin: 5rpx 1% 10rpx 1%;
+	width: 98vw;
+	font-size: $font-size-sm;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	.point{
+		color:$primary-color;
+		
+		&:active{
+			color: $active-color;
+		}
+	}
+}
+
+/* 底部无数据的提示样式 */
+.endes {
+	width: 100%;
+	color: #8a8d93;
+	text-align: center;
+	font-size: $font-size-smm;
+	margin-top: 38rpx;
+	margin-bottom: 38rpx;
+}

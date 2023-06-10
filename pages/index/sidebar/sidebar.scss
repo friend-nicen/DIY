@@ -1,0 +1,45 @@
+@import '@/assets/css/common.scss';
+
+.sidebar{
+	
+	position: fixed;
+	bottom: 26vh;
+	left:30rpx;
+	
+	@include flex-center;
+	flex-direction: column;
+	
+	z-index: 15;
+	
+	
+	
+	.button{
+		@include flex-center;
+		border-radius: 50%;
+		width: 68rpx;
+		height:68rpx;
+		margin-top: 30rpx;;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+		background-color: rgba($primary-color, 0.8);
+		
+		&:active {
+			background-color: $primary-color;
+		}
+		
+		.image{
+			
+			width: 32rpx;
+			height:32rpx;
+		}
+	}
+	
+	
+	.op{
+		font-size: $font-size-smmm;
+		color:$text-color;
+		margin-top: 8rpx;
+	}
+	
+	
+}

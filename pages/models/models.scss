@@ -1,0 +1,119 @@
+@import '@/assets/css/common.scss';
+
+.body{
+	background-color: $bg-color;
+	height: 100vh;
+	@include flex-center;
+	flex-direction: column;
+		
+	/*  
+	.search{
+		width: 90%;
+		min-height: 72rpx;
+		margin: 20rpx auto;
+		overflow: hidden;
+		box-sizing: border-box;
+		
+		
+		:deep(.uni-easyinput){
+			border-radius:60rpx;
+			overflow: hidden;
+			
+			.uni-easyinput__content-input{
+				height: 72rpx;
+			}
+		}
+	}
+	*/
+	
+	.models	 {
+		@include flex-center;
+		justify-content: space-between;
+		height:  100%;
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	
+		
+		.scroll{
+			width: 30%;
+			height: 100%;
+			font-size: $font-size-sm;
+			color:$text-color;
+			
+			box-sizing: border-box;
+			
+			
+			.item{
+				cursor: pointer;
+				font-size: $font-size-sm;
+			}
+			
+		}
+		
+		
+		.var{
+
+			position: relative;
+			z-index: 9;
+			background-color:white;
+			padding: 20rpx 0;
+			
+			.item{
+				text-align: center;
+				padding: 15rpx 0;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				width: 75%;
+				margin: 12rpx auto;
+			}
+			
+			.active{
+				font-weight: bold;
+				color: white;
+				background-color: $primary-color;
+				border-radius: 6rpx;
+				box-shadow: $sidebar-shadow;
+			}
+		}
+		.content{
+			
+			width: 70%;
+			padding: 24rpx;
+			background-color: white;
+			
+			
+			
+			.title{
+				@include flex-center;
+				color:$sub-text-color;
+				font-size: $font-size-sm;
+				font-weight: bold;
+				margin: 24rpx 0 24rpx 0;
+			}
+			
+			.item{
+				display: inline-flex;
+				text-align: center;
+				
+				background-color: $bg-color-3;
+				color: $primary-color;
+				border-radius: 50rpx;
+				padding:15rpx 28rpx;
+				margin: 12rpx;
+				
+				font-size: $font-size-smm;
+				
+				@include wrap;
+				
+				&:active{
+					background-color: $primary-color;
+					color: white;
+				}
+			}
+			
+			
+		}
+	}
+}
