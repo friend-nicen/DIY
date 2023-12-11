@@ -2,7 +2,11 @@
 
 一款基于UNIAPP开发的手机壳DIY小程序（前端示例代码），兼容抖音和微信小程序，在线案例：
 
+## 新版体验
+
 网页版：[https://douyin.nicen.cn/h.html](https://douyin.nicen.cn/h.html)
+
+## 小程序演示
 
 ![DIY手机壳](https://nicen.cn/wp-content/uploads/2023/01/gh_9f7a651d6dd8_860-150x150.jpg "DIY手机壳")
 
