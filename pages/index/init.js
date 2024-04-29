@@ -4,8 +4,8 @@ import {
 
 import load from '@/common/util/load.js'
 
-import user from "@/sotre/user.js"
-import system from "@/sotre/system";
+import user from "@/store/user.js"
+import system from "@/store/system";
 import {
 	getUserInfo
 } from "@/common/util/system.js";

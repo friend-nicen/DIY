@@ -9,8 +9,8 @@
 		onLoad
 	} from "@dcloudio/uni-app";
 
-	import System from "@/sotre/system.js"
-	import user from "@/sotre/user.js"
+	import System from "@/store/system.js"
+	import user from "@/store/user.js"
 	import {
 		watch
 	} from 'vue'

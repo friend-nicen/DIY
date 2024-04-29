@@ -79,7 +79,7 @@
 
 		try {
 			uni.request({
-				url: api.defaultModel,
+				url: api.default,
 				method: "POST",
 				data: {
 					goods: systems.env.goods,

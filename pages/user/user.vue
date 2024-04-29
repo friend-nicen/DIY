@@ -59,7 +59,7 @@
 
 	import api from "@/service/api";
 	import load from "@/common/util/load";
-	import user from "@/sotre/user.js"
+	import user from "@/store/user.js"
 
 	import {
 		onReachBottom,

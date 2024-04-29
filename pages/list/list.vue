@@ -55,7 +55,7 @@
 	} from "@/common/util/system.js";
 
 	import api from "@/service/api";
-	import user from "@/sotre/user.js"
+	import user from "@/store/user.js"
 	import load from "@/common/util/load";
 
 

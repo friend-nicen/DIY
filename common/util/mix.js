@@ -7,8 +7,8 @@ import {
 	computed,
 } from "vue";
 
-import system from "@/sotre/system.js";
-import user from "@/sotre/user.js"
+import system from "@/store/system.js";
+import user from "@/store/user.js"
 
 
 export default function() {

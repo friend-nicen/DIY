@@ -51,9 +51,9 @@
 	} from "@/common/util/system.js";
 
 	import api from "@/service/api";
-	import user from "@/sotre/user.js"
+	import user from "@/store/user.js"
 	import load from "@/common/util/load";
-	import systems from "@/sotre/system.js"
+	import systems from "@/store/system.js"
 
 
 	/* 系统信息 */

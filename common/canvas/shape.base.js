@@ -86,7 +86,7 @@ export default class Shape {
 
 		context.beginPath();
 
-		const rectCenterPoint = {
+		let rectCenterPoint = {
 			x: x + w / 2,
 			y: y + h / 2
 		}; // 矩形中心点

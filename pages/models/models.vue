@@ -42,8 +42,8 @@
 	} from "vue";
 
 	import api from "@/service/api";
-	import user from "@/sotre/user.js"
-	import system from "@/sotre/system.js"
+	import user from "@/store/user.js"
+	import system from "@/store/system.js"
 	import load from "@/common/util/load";
 
 
