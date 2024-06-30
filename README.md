@@ -4,7 +4,7 @@
 
 ## 新版体验
 
-网页版：[https://douyin.nicen.cn/h.html](https://douyin.nicen.cn/h.html)
+网页版：[https://douyin.nicen.cn/m.html](https://douyin.nicen.cn/m.html)
 
 ## 小程序演示
 
@@ -43,7 +43,7 @@
 │  ├─show
 │  └─user
 ├─service             // 接口
-├─sotre               // 全局状态
+├─store               // 全局状态
 ├─static              // 静态资源
 │  └─tabbar
 └─uni_modules         // uni-app组件

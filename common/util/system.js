@@ -4,21 +4,21 @@ import load from "@/common/util/load.js"
 import system from "@/store/system";
 
 
-/*
+/* 
 	系统相关的一些接口
  */
 
 
 
 
-/*
+/* 
 	添加拦截器
  */
 function addIntercept() {
 	/* 用户信息 */
-	let userInfo = user();
+	const userInfo = user();
 
-	/*
+	/* 
 		全局认证头
 	 */
 	uni.addInterceptor('request', {
@@ -59,7 +59,7 @@ export function login() {
 
 				/* 如果是微信 */
 				//#ifdef MP-WEIXIN
-				let data = {
+				const data = {
 					code: res.code,
 					scene: "wechat"
 				}
@@ -71,7 +71,7 @@ export function login() {
 				/* 获取小程序标识 */
 				const systems = system();
 
-				let data = {
+				const data = {
 					code: res.code,
 					mini: systems.env.mini
 				}
@@ -121,7 +121,7 @@ export function getUserInfo() {
 
 
 	/* 用户信息 */
-	let userInfo = user();
+	const userInfo = user();
 
 	return new Promise(resolve => {
 
@@ -130,7 +130,7 @@ export function getUserInfo() {
 			force: true,
 			success(res) {
 
-				let info = {
+				const info = {
 					avatar: res.userInfo.avatarUrl,
 					nickname: res.userInfo.nickName
 				};
@@ -172,7 +172,7 @@ export function getUserInfo() {
 
 
 
-/*
+/* 
 	激励视频观看
  */
 export function watchVideo() {

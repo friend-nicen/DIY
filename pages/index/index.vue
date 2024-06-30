@@ -38,7 +38,7 @@
 <script>
 import BetterGesture from "@/common/canvas/gesture"
 import Stage from "@/common/canvas/stage"
-import Driver from "@/components/driver/driver.vue"
+
 
 import {getCurrentInstance, provide, reactive, ref} from 'vue'
 
@@ -61,8 +61,7 @@ export default {
   components: {
     Handle: Footer,
     Headers: Headers,
-    SideBar: SideBar,
-    Driver: Driver
+    SideBar: SideBar
   },
   setup() {
 
@@ -160,7 +159,7 @@ export default {
 
         /* 触发单击事件 */
         if (start) {
-          if (pos[0].x == start.x && pos[0].y == start.y) {
+          if (pos[0].x === start.x && pos[0].y === start.y) {
             /* 判断单击选中 */
             that.app.stage.start(pos, true);
           }

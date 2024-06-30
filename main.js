@@ -18,10 +18,12 @@ import {
 } from 'vue'
 import * as Pinia from 'pinia';
 import App from './App.vue'
-
+import Driver from "@/components/driver"
 
 export function createApp() {
 	const app = createSSRApp(App);
+
+	app.component('Driver', Driver);
 	app.use(Pinia.createPinia());
 
 
