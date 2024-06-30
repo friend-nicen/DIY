@@ -8,7 +8,7 @@
 
 ## 小程序演示
 
-![DIY手机壳](https://nicen.cn/wp-content/uploads/2023/01/gh_9f7a651d6dd8_860-150x150.jpg "DIY手机壳")
+![DIY手机壳](demo.jpg "DIY手机壳")
 
 # 使用方法
 
