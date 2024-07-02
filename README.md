@@ -4,7 +4,13 @@
 
 ## 新版体验
 
-网页版：[https://douyin.nicen.cn/m.html](https://douyin.nicen.cn/m.html)
+移动端访问：
+
+* T恤：[https://douyin.nicen.cn/m.html?project=1](https://douyin.nicen.cn/m.html#/?project=1)
+* 手机壳：[https://douyin.nicen.cn/m.html?project=3](https://douyin.nicen.cn/m.html#/?project=3)
+* 抱枕：[https://douyin.nicen.cn/m.html?project=4](https://douyin.nicen.cn/m.html#/?project=4)
+
+更多...
 
 ## 小程序演示
 
