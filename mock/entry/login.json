@@ -1,0 +1,11 @@
+{
+  "code": 1,
+  "data": {
+    "ad": true,
+    "adUnitId": "adunit-6cf37e6e86e1ca70",
+    "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132",
+    "nickname": "微信用户",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcGVuaWQiOiJvQ004aDR5ZzhiZlJWcWdkbGpvVGtTVWhKMXVjIiwiZXhwaXJlIjoiMjAyNC0wNC0wMiAyMTozMTo1NiJ9.vB8ULATdDmwTudCqIMFfnxX8Q1aQ2MhwRNJIsqWom0k"
+  },
+  "msg": "登录成功！"
+}

@@ -1,0 +1,94 @@
+{
+  "code": 1,
+  "data": [
+    {
+      "label": "卡通",
+      "value": 4
+    },
+    {
+      "label": "表情",
+      "value": 5
+    },
+    {
+      "label": "创意文字",
+      "value": 6
+    },
+    {
+      "label": "土酷",
+      "value": 7
+    },
+    {
+      "label": "清凉",
+      "value": 8
+    },
+    {
+      "label": "玩水",
+      "value": 9
+    },
+    {
+      "label": "去旅行",
+      "value": 10
+    },
+    {
+      "label": "贴纸",
+      "value": 11
+    },
+    {
+      "label": "海边",
+      "value": 12
+    },
+    {
+      "label": "夏日",
+      "value": 13
+    },
+    {
+      "label": "甜点",
+      "value": 14
+    },
+    {
+      "label": "猪猪",
+      "value": 15
+    },
+    {
+      "label": "甜酷",
+      "value": 16
+    },
+    {
+      "label": "贴纸2",
+      "value": 17
+    },
+    {
+      "label": "啊鸭",
+      "value": 18
+    },
+    {
+      "label": "爱丽丝",
+      "value": 19
+    },
+    {
+      "label": "爱旅行",
+      "value": 20
+    },
+    {
+      "label": "爱拍照",
+      "value": 21
+    },
+    {
+      "label": "爱心",
+      "value": 22
+    },
+    {
+      "label": "BiuBiu",
+      "value": 23
+    },
+    {
+      "label": "制冷少女",
+      "value": 24
+    },
+    {
+      "label": "元气满满",
+      "value": 25
+    }
+  ],
+  "errMsg": "查询成功！"
+}

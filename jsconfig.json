@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "@dcloudio/types",
+      "miniprogram-api-typings",
+      "mini-types"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
