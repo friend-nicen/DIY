@@ -42,7 +42,7 @@ export default {
 <style lang="scss">
 /*每个页面公共css */
 @import '@/uni_modules/uni-scss/index.scss';
-
+@import './theme/iconfont.css';
 // 设置整个项目的背景色
 page {
   background-color: #f6f6f6;
